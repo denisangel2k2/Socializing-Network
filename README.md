@@ -15,8 +15,9 @@ Throughout this project I have learnt plenty of coding concepts and design patte
 
 ## Screenshots
 
-![App Screenshot]()
+![af5b31b5b963e4c2b0d443012a6c4cc1](https://user-images.githubusercontent.com/57831211/215621288-f222fdeb-bf63-4e3a-a294-84ac865c798c.png)
 
+https://user-images.githubusercontent.com/57831211/215621264-4d4e2802-f741-47c4-bcb7-3cd22bd79531.mp4
 
 ## Features
 

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.socialnetwork.app.controllers.UserMainIntefaceRefurbishedController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0">
+         <left>
+            <HBox prefHeight="400.0" prefWidth="284.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="71.0" styleClass="darkPane" stylesheets="@../../../styles/mainStyle.css">
+                     <children>
+                        <ImageView fx:id="profileImageView" fitHeight="71.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets bottom="13.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="usersPaneButton" fitHeight="45.0" fitWidth="45.0" onMouseClicked="#onSearchButton" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Denis/Documents/GitHub/UBB/Year%202/Advanced%20Programming%20Methods/Socializing%20Network%20-%20GUI/SocialNetwork/src/utilities/users.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="13.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="messagesListPaneButton" fitHeight="45.0" fitWidth="45.0" onMouseClicked="#onMessagesButton" pickOnBounds="true" preserveRatio="true" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="13.0" top="13.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="file:/C:/Users/Denis/Documents/GitHub/UBB/Year%202/Advanced%20Programming%20Methods/Socializing%20Network%20-%20GUI/SocialNetwork/src/utilities/messages.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="friendsPaneButton" fitHeight="45.0" fitWidth="45.0" onMouseClicked="#onFriendsButton" pickOnBounds="true" preserveRatio="true">
+                           <VBox.margin>
+                              <Insets left="13.0" top="13.0" />
+                           </VBox.margin>
+                           <image>
+                              <Image url="file:/C:/Users/Denis/Documents/GitHub/UBB/Year%202/Advanced%20Programming%20Methods/Socializing%20Network%20-%20GUI/SocialNetwork/src/utilities/friendrequests.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="settingsPaneButton" fitHeight="45.0" fitWidth="45.0" onMouseClicked="#onSettingsButton" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Denis/Documents/GitHub/UBB/Year%202/Advanced%20Programming%20Methods/Socializing%20Network%20-%20GUI/SocialNetwork/src/utilities/settings.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="13.0" top="13.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Pane prefHeight="60.0" prefWidth="71.0" VBox.vgrow="ALWAYS" />
+                        <ImageView fx:id="logoutButton" fitHeight="45.0" fitWidth="45.0" onMouseClicked="#onLogoutButtonAction" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/Denis/Documents/GitHub/UBB/Year%202/Advanced%20Programming%20Methods/Socializing%20Network%20-%20GUI/SocialNetwork/src/utilities/logout.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="13.0" />
+                           </VBox.margin>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="darkerPane" stylesheets="@../../../styles/mainStyle.css">
+                     <children>
+                        <VBox fx:id="searchPane" prefHeight="406.0" prefWidth="224.0" visible="false">
+                           <children>
+                              <TableView fx:id="usersTable" prefHeight="418.0" prefWidth="224.0">
+                                 <columns>
+                                    <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First Name" />
+                                    <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Last Name" />
+                                    <TableColumn fx:id="emailColumn" prefWidth="75.0" text="Email" />
+                                 </columns>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </TableView>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="searchUserTextField" promptText="Search a user">
+                                       <HBox.margin>
+                                          <Insets left="3.0" right="10.0" />
+                                       </HBox.margin>
+                                    </TextField>
+                                    <Button mnemonicParsing="false" onAction="#onAddFriendButton" prefHeight="25.0" prefWidth="91.0" text="Add friend" />
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets top="13.0" />
+                                 </VBox.margin>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="messagesListPane" layoutX="-1.0" layoutY="4.0" prefHeight="400.0" prefWidth="225.0" visible="false">
+                           <children>
+                              <ListView fx:id="usersMessageList" onMouseClicked="#onUserFromUserMessageListClick" prefHeight="408.0" prefWidth="226.0" />
+                           </children></VBox>
+                        <VBox fx:id="settingsPane" layoutX="-1.0" layoutY="4.0" prefHeight="400.0" prefWidth="225.0">
+                           <children>
+                              <Label fx:id="connectedUserLabel" text="User name" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" left="10.0" top="17.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="emailUserLabel" text="Email" textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets left="10.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Label>
+                              <Pane prefHeight="305.0" prefWidth="225.0" />
+                              <Button fx:id="refreshButton" mnemonicParsing="false" onAction="#update" text="Refresh">
+                                 <VBox.margin>
+                                    <Insets bottom="7.0" left="5.0" top="10.0" />
+                                 </VBox.margin>
+                              </Button>
+                              <Button fx:id="deleteAccountButton" mnemonicParsing="false" onAction="#onRemoveAccountAction" styleClass="darkPane" stylesheets="@../../../styles/mainStyle.css" text="Delete account" textFill="RED">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" left="5.0" />
+                                 </VBox.margin>
+                              </Button>
+                           </children>
+                        </VBox>
+                        <VBox fx:id="friendsPane" layoutX="-1.0" layoutY="5.0" prefHeight="400.0" prefWidth="225.0" visible="false">
+                           <children>
+                              <TableView fx:id="friendsTableView" prefHeight="188.0" prefWidth="226.0">
+                                 <columns>
+                                    <TableColumn fx:id="friendNameColumn" prefWidth="90.0" text="Name" />
+                                    <TableColumn fx:id="friendsSinceColumn" prefWidth="134.0" text="Friends since" />
+                                 </columns>
+                              </TableView>
+                              <Pane prefHeight="71.0" prefWidth="226.0">
+                                 <children>
+                                    <Button fx:id="removeFriendButton" layoutX="160.0" layoutY="3.0" mnemonicParsing="false" onAction="#onRemoveFriendButton" styleClass="darkPane" stylesheets="@../../../styles/mainStyle.css" text="Remove" textFill="#eb0c0c" />
+                                 </children>
+                              </Pane>
+                              <Pane prefHeight="71.0" prefWidth="226.0">
+                                 <children>
+                                    <Label layoutX="7.0" layoutY="4.0" text="Friend requests" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <ListView fx:id="friendRequestsListView" prefHeight="199.0" prefWidth="225.0" />
+                              <Pane prefHeight="23.0" prefWidth="225.0" />
+                              <HBox prefHeight="57.0" prefWidth="225.0">
+                                 <children>
+                                    <ImageView fx:id="acceptFriendButton" fitHeight="45.0" fitWidth="45.0" onMouseClicked="#onAcceptButton" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets left="130.0" top="11.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="file:/C:/Users/Denis/Documents/GitHub/UBB/Year%202/Advanced%20Programming%20Methods/Socializing%20Network%20-%20GUI/SocialNetwork/src/utilities/accept.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="rejectFriendButton" fitHeight="47.0" fitWidth="47.0" onMouseClicked="#onRejectFriendrequestButton" pickOnBounds="true" preserveRatio="true">
+                                       <HBox.margin>
+                                          <Insets bottom="9.0" top="9.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="file:/C:/Users/Denis/Documents/GitHub/UBB/Year%202/Advanced%20Programming%20Methods/Socializing%20Network%20-%20GUI/SocialNetwork/src/utilities/remove.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="424.0" prefWidth="304.0" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="chatPane" prefHeight="400.0" prefWidth="303.0">
+                     <children>
+                        <TableView fx:id="chatTable" prefHeight="360.0" prefWidth="313.0">
+                          <columns>
+                            <TableColumn fx:id="messageFromUserColumn" prefWidth="155.199951171875" text="From" />
+                            <TableColumn fx:id="messageToUserColumn" minWidth="0.0" prefWidth="148.00006103515625" text="To" />
+                          </columns>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TableView>
+                        <HBox prefHeight="28.0" prefWidth="303.0">
+                           <children>
+                              <TextField fx:id="messageTextField" prefHeight="26.0" prefWidth="242.0" promptText="Send message">
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="10.0" top="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="sendMessageButton" mnemonicParsing="false" onAction="#onSendMessageButton" prefHeight="26.0" prefWidth="50.0" text="Send">
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <Label fx:id="logoLabel" layoutX="113.0" layoutY="153.0" text="HI6" textAlignment="CENTER" textFill="#8fdd99" visible="false">
+                     <font>
+                        <Font name="Impact" size="57.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

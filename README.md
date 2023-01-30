@@ -34,6 +34,11 @@ Database ERD
 
 ![0a9b28194542310b9ddfd3e9daf24267](https://user-images.githubusercontent.com/57831211/215622103-03a8fd75-860e-424c-990f-1e9635ee152d.png)
 
+Login/Register and error message sample
+
+![acb28e7a1194905378410b6fde072139](https://user-images.githubusercontent.com/57831211/215623086-885cb424-c6c1-44bb-997c-2ff73b377ddf.png)
+
+
 ## Features
 
 - Login/Register

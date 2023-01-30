@@ -14,10 +14,21 @@ Throughout this project I have learnt plenty of coding concepts and design patte
 
 
 ## Screenshots
+Settings page
 
 ![af5b31b5b963e4c2b0d443012a6c4cc1](https://user-images.githubusercontent.com/57831211/215621288-f222fdeb-bf63-4e3a-a294-84ac865c798c.png)
 
+Send messages
+
 https://user-images.githubusercontent.com/57831211/215621264-4d4e2802-f741-47c4-bcb7-3cd22bd79531.mp4
+
+Friend list & friend requests
+
+![891111dfe7e2051976801c7fe9e6c19d](https://user-images.githubusercontent.com/57831211/215621764-63573d8f-1ae0-4e63-99f0-19c1d9fd61bb.png)
+
+Users list
+
+![981bafd7aa34d69bda4835354723efc9](https://user-images.githubusercontent.com/57831211/215621771-84b8c3cc-9831-4315-9767-e291e8e84022.png)
 
 ## Features
 

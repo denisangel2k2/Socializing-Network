@@ -30,6 +30,10 @@ Users list
 
 ![981bafd7aa34d69bda4835354723efc9](https://user-images.githubusercontent.com/57831211/215621771-84b8c3cc-9831-4315-9767-e291e8e84022.png)
 
+Database ERD
+
+![0a9b28194542310b9ddfd3e9daf24267](https://user-images.githubusercontent.com/57831211/215622103-03a8fd75-860e-424c-990f-1e9635ee152d.png)
+
 ## Features
 
 - Login/Register

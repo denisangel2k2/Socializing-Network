@@ -64,6 +64,6 @@ Login/Register and error message sample
 
 #### Metrics
 
-Checkout the metrics generated with Metrics Reloaded Extension from JetBrains' IntelliJ IDEA
+Checkout the metrics generated with Metrics Reloaded Extension from JetBrains' IntelliJ IDEA [here](https://github.com/denisangel2k2/Socializing-Network/tree/master/metrics)
 
     

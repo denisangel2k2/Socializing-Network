@@ -4,8 +4,8 @@
 HI6 is a socializing network application made in JavaFX implementing various functionalities that you would normally see on a socializing network such as Facebook or Instagram. 
 
 
-[![JavaFX Toolkit](https://img.shields.io/badge/db-PostgreSQL-blue)](https://openjfx.io)
-[![Database](https://img.shields.io/badge/toolkit-JavaFX-orange)](https://www.postgresql.org)
+[![JavaFX Toolkit](https://img.shields.io/badge/toolkit-JavaFX-orange)](https://openjfx.io)
+[![Database](https://img.shields.io/badge/db-PostgreSQL-blue)](https://www.postgresql.org)
 
 ## Achievements
 Throughout this project I have learnt plenty of coding concepts and design patterns. In addition, I had the chance to work with a database and debug the never-ending errors coming from adding the right files and code needed to run the app. 
